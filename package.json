@@ -8,11 +8,17 @@
     "check": "turbo run check --continue",
     "test": "turbo run test --continue",
     "format": "prettier --write .",
-    "clean": "turbo run clean && rm -rf node_modules"
+    "format:check": "prettier --check .",
+    "clean": "turbo run clean && rm -rf node_modules",
+    "prepare": "husky && turbo run prepare"
   },
   "devDependencies": {
+    "@commitlint/cli": "^19.6.0",
+    "@commitlint/config-conventional": "^19.6.0",
     "@testing-library/svelte": "^5.2.6",
     "@trivago/prettier-plugin-sort-imports": "^5.1.0",
+    "commitlint-config-monorepo": "^2.0.2",
+    "husky": "^9.1.7",
     "prettier": "^3.4.2",
     "prettier-plugin-svelte": "^3.3.2",
     "prettier-plugin-tailwindcss": "^0.6.9",

@@ -1,4 +1,4 @@
-@import "@repo/ui/style";
+@import "@repo/ui/style.css";
 
 @tailwind base;
 @tailwind components;
