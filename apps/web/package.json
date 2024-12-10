@@ -16,7 +16,7 @@
     "clean": "rm -rf node_modules .svelte-kit"
   },
   "dependencies": {
-    "@repo/ui": "*"
+    "ui": "*"
   },
   "devDependencies": {
     "@eslint/eslintrc": "^3.2.0",

@@ -1,5 +1,5 @@
 <script lang="ts">
-  import { MyCounterButton } from "@repo/ui";
+  import { MyCounterButton } from "ui";
 </script>
 
 <div class="container mx-auto flex max-w-xl flex-col items-center gap-4 p-20">
