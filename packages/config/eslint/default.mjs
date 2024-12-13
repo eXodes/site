@@ -1,17 +1,17 @@
 import { rules } from "./rules.mjs";
-import eslintConfigPrettier from "eslint-config-prettier";
-import eslintConfigTurbo from "eslint-config-turbo/flat";
+import prettier from "eslint-config-prettier";
+import turbo from "eslint-config-turbo/flat";
 import onlyWarn from "eslint-plugin-only-warn";
-import eslintPluginUnicorn from "eslint-plugin-unicorn";
+import unicorn from "eslint-plugin-unicorn";
 import globals from "globals";
-import tseslint from "typescript-eslint";
+import ts from "typescript-eslint";
 
-export default tseslint.config(
-  eslintPluginUnicorn.configs["flat/recommended"],
-  ...tseslint.configs.recommendedTypeChecked,
-  ...tseslint.configs.stylisticTypeChecked,
-  eslintConfigPrettier,
-  ...eslintConfigTurbo,
+export default ts.config(
+  unicorn.configs["flat/recommended"],
+  ...ts.configs.recommendedTypeChecked,
+  ...ts.configs.stylisticTypeChecked,
+  prettier,
+  ...turbo,
   {
     plugins: {
       "only-warn": onlyWarn,
@@ -23,7 +23,7 @@ export default tseslint.config(
       ecmaVersion: "latest",
       sourceType: "module",
 
-      parser: tseslint.parser,
+      parser: ts.parser,
       parserOptions: {
         projectService: true,
         tsconfigRootDir: import.meta.dirname,

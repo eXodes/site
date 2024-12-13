@@ -1,7 +1,7 @@
 import svelteConfig from "eslint-config/svelte";
-import tsEslint from "typescript-eslint";
+import ts from "typescript-eslint";
 
-export default tsEslint.config(
+export default ts.config(
   {
     ignores: [
       "**/.DS_Store",
