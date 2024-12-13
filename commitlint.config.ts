@@ -1,14 +1,6 @@
-import { readdirSync } from "node:fs";
+import { getPackageNames } from "./packages/turbo/utils/src/scope";
 
-export const appNames = readdirSync("./apps", { withFileTypes: true })
-  .filter((entry) => entry.isDirectory())
-  .map((dir) => dir.name);
-
-export const packageNames = readdirSync("./packages", { withFileTypes: true })
-  .filter((entry) => entry.isDirectory())
-  .map((dir) => dir.name);
-
-const scopes = ["repo", ...appNames, ...packageNames];
+const scopes = ["repo", ...getPackageNames("./")];
 
 export default {
   extends: ["@commitlint/config-conventional", "monorepo"],

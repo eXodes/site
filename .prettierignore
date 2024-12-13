@@ -10,6 +10,9 @@ node_modules
 vite.config.js*
 vite.config.*.timestamp-*
 
+# Templates
+*.hbs
+
 # Ignore files for PNPM, NPM and YARN
 pnpm-lock.yaml
 pnpm-workspace.yaml
