@@ -8,7 +8,10 @@
     "build": "tsup",
     "lint": "eslint . --max-warnings 0"
   },
-  "exports": {},
+  "exports": {
+    "./prompt": "./src/prompt.ts",
+    "./scope": "./src/scope.ts"
+  },
   "devDependencies": {
     "@types/lodash": "^4.17.12",
     "eslint-config": "*",
