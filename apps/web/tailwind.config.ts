@@ -5,7 +5,21 @@ const config: Config = {
   presets: [baseConfig],
   content: ["./src/**/*.{html,js,svelte,ts}"],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        sans: [
+          "Rubik",
+          "ui-sans-serif",
+          "system-ui",
+          "sans-serif",
+          "Apple Color Emoji",
+          "Segoe UI Emoji",
+          "Segoe UI Symbol",
+          "Noto Color Emoji",
+        ],
+        display: ["Bumbbled", "ui-serif", "Georgia", "serif"],
+      },
+    },
   },
   plugins: [],
 };
