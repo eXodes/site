@@ -1,0 +1,27 @@
+@import "tailwind-config/tailwind.css";
+@import "ui/style.css";
+
+@layer base {
+  @font-face {
+    font-family: "Rubik";
+    font-style: normal;
+    font-display: swap;
+    src: url(/fonts/rubik-variable.ttf) format("truetype");
+  }
+
+  @font-face {
+    font-family: "Rubik";
+    font-style: italic;
+    font-weight: 400;
+    font-display: swap;
+    src: url(/fonts/rubik-variable.ttf) format("truetype");
+  }
+
+  @font-face {
+    font-family: "Bumbbled";
+    font-style: italic;
+    font-weight: 400;
+    font-display: swap;
+    src: url(/fonts/bumbbled.otf) format("opentype");
+  }
+}

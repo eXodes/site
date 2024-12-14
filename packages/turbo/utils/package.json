@@ -1,0 +1,24 @@
+{
+  "name": "turbo-utils",
+  "version": "0.0.0",
+  "type": "commonjs",
+  "private": true,
+  "scripts": {
+    "prepare": "tsup",
+    "build": "tsup",
+    "lint": "eslint . --max-warnings 0",
+    "clean": "rm -rf node_modules dist"
+  },
+  "exports": {
+    "./prompt": "./src/prompt.ts",
+    "./scope": "./src/scope.ts"
+  },
+  "devDependencies": {
+    "@types/lodash": "^4.17.12",
+    "eslint-config": "*",
+    "lodash": "^4.17.21",
+    "tsup": "^8.3.5",
+    "typescript-config": "*",
+    "typescript-eslint": "^8.17.0"
+  }
+}
