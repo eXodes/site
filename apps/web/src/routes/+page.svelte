@@ -1,31 +1,32 @@
 <script lang="ts">
+  import { base } from "$app/paths";
   import { Link } from "ui";
 
   const SOCIAL = [
     {
       name: "Bluesky",
       href: "https://exodes.bsky.social",
-      icon: "/images/social/bluesky.svg",
+      icon: base + "/images/social/bluesky.svg",
     },
     {
       name: "X",
       href: "https://x.com/eXodes",
-      icon: "/images/social/x.svg",
+      icon: base + "/images/social/x.svg",
     },
     {
       name: "Facebook",
       href: "https://www.facebook.com/exod3s",
-      icon: "/images/social/facebook.svg",
+      icon: base + "/images/social/facebook.svg",
     },
     {
       name: "Instagram",
       href: "https://www.instagram.com/exodes/",
-      icon: "/images/social/instagram.svg",
+      icon: base + "/images/social/instagram.svg",
     },
     {
       name: "WhatsApp",
       href: "https://whatsapp.exodes.net",
-      icon: "/images/social/whatsapp.svg",
+      icon: base + "/images/social/whatsapp.svg",
     },
   ];
 </script>
@@ -39,7 +40,7 @@
 >
   <h1 class="text-8xl font-display text-picton-blue-900">
     <img
-      src="/images/hello.svg"
+      src={base + "/images/hello.svg"}
       alt="Hello"
       class="w-auto h-12 lg:h-24 stroke-picton-blue-900"
     />
