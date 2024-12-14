@@ -1,0 +1,30 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`Link > should render component 1`] = `
+HTMLCollection [
+  <a
+    class="font-medium bg-[length:100%_200%] transition-all duration-500 bg-gradient-to-b from-transparent from-50% to-yellow to-50% border-b-4 border-yellow px-0.5 -mx-0.5 hover:bg-[0_100%] hover:border-b-2"
+    href="/login"
+  >
+    <span>
+      Login
+    </span>
+    <!---->
+  </a>,
+]
+`;
+
+exports[`Link > should render with external 1`] = `
+HTMLCollection [
+  <a
+    class="font-medium bg-[length:100%_200%] transition-all duration-500 bg-gradient-to-b from-transparent from-50% to-yellow to-50% border-b-4 border-yellow px-0.5 -mx-0.5 hover:bg-[0_100%] hover:border-b-2"
+    href="https://acme.inc"
+    target="_blank"
+  >
+    <span>
+      Login
+    </span>
+    <!---->
+  </a>,
+]
+`;
