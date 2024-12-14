@@ -13,7 +13,7 @@
     "lint": "eslint . --max-warnings 0",
     "test:integration": "playwright test",
     "test:unit": "vitest run",
-    "clean": "rm -rf node_modules .svelte-kit"
+    "clean": "rm -rf node_modules .svelte-kit build"
   },
   "dependencies": {
     "ui": "*"
