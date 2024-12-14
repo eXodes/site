@@ -19,8 +19,8 @@ jobs:
       - name: Install dependencies
         run: npm install
 
-      - name: build
-        run: npm run build -w
+      - name: Build
+        run: npm run build -w apps/web
 
       - name: Upload Artifacts
         uses: actions/upload-pages-artifact@v3

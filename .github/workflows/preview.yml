@@ -20,8 +20,8 @@ jobs:
       - name: Install dependencies
         run: npm install
 
-      - name: build
-        run: npm run build -w
+      - name: Build
+        run: npm run build -w apps/web
 
       - name: Deploy preview
         uses: rossjrw/pr-preview-action@v1
