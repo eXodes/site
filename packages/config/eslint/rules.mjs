@@ -1,5 +1,4 @@
 export const rules = {
-  "func-style": ["error"],
   "no-console": ["error", { allow: ["info", "warn", "error"] }],
   "@typescript-eslint/naming-convention": [
     "error",
