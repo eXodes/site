@@ -1,0 +1,30 @@
+name: Deploy to GitHub Pages (Preview)
+concurrency: preview-${{ github.ref }}
+
+on:
+  pull_request:
+    branches: "main"
+
+jobs:
+  build-preview:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Install Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: build
+        run: npm run build -w
+
+      - name: Deploy preview
+        uses: rossjrw/pr-preview-action@v1
+        with:
+          source-dir: "./apps/web/build/"
