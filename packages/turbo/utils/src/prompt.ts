@@ -1,11 +1,6 @@
 import { PlopTypes } from "@turbo/gen";
 import { kebabCase, startCase } from "lodash/fp";
 
-interface PromptOptions {
-  choices: string[];
-  route?: boolean;
-}
-
 function transformName(input: string) {
   const names = input.split(".");
 
@@ -122,19 +117,33 @@ export function generateNamePrompt(generator: string): PlopTypes.PromptQuestion 
   };
 }
 
-export function generateRoutePrompt(
-  generatorName: string,
-  options: Pick<PromptOptions, "route">
-): PlopTypes.PromptQuestion {
+export function generateRoutePrompt(generatorName: string): PlopTypes.PromptQuestion {
   return {
     type: "input",
     name: "route",
     message: `What should be the route for this ${generatorName}?`,
     filter: transformPath,
     validate(input: string) {
-      return validate(input, "route", { route: options.route });
+      return validate(input, "route", { route: true });
     },
-    when: () => options.route === true,
+  };
+}
+
+export function generateLoadPrompt(): PlopTypes.PromptQuestion {
+  return {
+    type: "confirm",
+    name: "load",
+    message: "Does this page require the data to be loaded?",
+    default: false,
+  };
+}
+
+export function generateServerPrompt(): PlopTypes.PromptQuestion {
+  return {
+    type: "confirm",
+    name: "server",
+    message: "Should the data be fetched on the server?",
+    default: false,
   };
 }
 
