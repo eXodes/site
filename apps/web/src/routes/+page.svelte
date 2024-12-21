@@ -53,8 +53,8 @@
   </h1>
 
   <p class="text-lg leading-[2rem] lg:text-3xl lg:leading-[3rem]">
-    I’m Exo. I’m a self-taught <Link href="/past-projects">UI Engineer</Link> based in Selangor. I currently
-    work as Frontend Enginer for <Link
+    I’m Exo. I’m a self-taught <Link href={base + "/past-projects"}>UI Engineer</Link> based in Selangor.
+    I currently work as Frontend Enginer for <Link
       href="https://www.hypefast.id"
       external>Hypefast</Link
     >
