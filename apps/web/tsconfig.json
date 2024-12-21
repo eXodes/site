@@ -27,6 +27,7 @@
     "./tests/**/*.js",
     "./tests/**/*.ts",
     "./tests/**/*.svelte",
+    "./turbo/**/*.ts",
     "./tailwind.config.ts"
   ],
   "exclude": [
