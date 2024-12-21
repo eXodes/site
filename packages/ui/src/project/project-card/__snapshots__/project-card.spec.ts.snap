@@ -1,0 +1,56 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`ProjectCard > should render component 1`] = `
+HTMLCollection [
+  <a
+    href="https://example.com"
+    target="_blank"
+  >
+    <img
+      alt="Project 1"
+      class="aspect-video w-full rounded-t-lg object-cover lg:rounded-lg"
+      src="https://via.placeholder.com/150"
+    />
+     
+    <div
+      class="group rounded-lg bg-gradient-to-b from-transparent from-50% to-yellow/90 to-50% bg-[length:100%_200%] transition-all duration-500 hover:bg-[0_100%] hover:backdrop-blur lg:absolute lg:inset-0"
+    >
+      <div
+        class="flex flex-col items-center justify-center gap-4 bg-yellow p-4 text-center transition-all duration-500 group-hover:translate-y-0 lg:absolute lg:inset-0 lg:translate-y-[100%] lg:bg-transparent"
+      >
+        <div>
+          <h3
+            class="text-xl font-semibold"
+          >
+            Project 1
+          </h3>
+           
+          <p
+            class="text-xs uppercase tracking-wider text-gray-600"
+          >
+            Company 1
+          </p>
+           
+          <p
+            class="px-2 py-1 text-sm tracking-wide text-gray-500"
+          >
+            2021
+          </p>
+        </div>
+         
+        <div
+          class="lg:px-6"
+        >
+          <p
+            class="text-xs text-gray-700"
+          >
+            A brief description of the project 1.
+          </p>
+        </div>
+         
+        <!---->
+      </div>
+    </div>
+  </a>,
+]
+`;

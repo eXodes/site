@@ -2,7 +2,13 @@
   import { base } from "$app/paths";
   import { Link } from "ui";
 
-  const SOCIAL = [
+  interface Social {
+    name: string;
+    href: string;
+    icon: string;
+  }
+
+  const SOCIAL: Social[] = [
     {
       name: "Bluesky",
       href: "https://exodes.bsky.social",
@@ -36,21 +42,19 @@
 </svelte:head>
 
 <main
-  class="min-h-screen w-full flex flex-col gap-8 lg:gap-20 px-6 py-10 lg:px-40 justify-center bg-picton-blue-500"
+  class="container mx-auto flex min-h-screen flex-col justify-center gap-8 px-6 py-10 lg:gap-20"
 >
-  <h1 class="text-8xl font-display text-picton-blue-900">
+  <h1 class="font-display text-8xl text-picton-blue-900">
     <img
       src={base + "/images/hello.svg"}
       alt="Hello"
-      class="w-auto h-12 lg:h-24 stroke-picton-blue-900"
+      class="h-12 w-auto stroke-picton-blue-900 lg:h-24"
     />
   </h1>
 
-  <p class="text-lg lg:text-3xl leading-[2rem] lg:leading-[3rem]">
-    I’m Exo. I’m a self-taught <Link
-      href="https://web.exodes.net"
-      external>UI Engineer</Link
-    > based in Selangor. I currently work as Frontend Enginer for <Link
+  <p class="text-lg leading-[2rem] lg:text-3xl lg:leading-[3rem]">
+    I’m Exo. I’m a self-taught <Link href="/past-projects">UI Engineer</Link> based in Selangor. I currently
+    work as Frontend Enginer for <Link
       href="https://www.hypefast.id"
       external>Hypefast</Link
     >
@@ -85,13 +89,13 @@
     >.
   </p>
 
-  <footer class="w-full flex">
+  <footer class="flex w-full">
     <ul class="flex gap-6">
       {#each SOCIAL as { name, href, icon }}
-        <li class="w-5 h-5 lg:w-6 lg:h-6">
+        <li class="h-5 w-5 lg:h-6 lg:w-6">
           <a href={href}>
             <img
-              class="grayscale hover:grayscale-0 opacity-70 hover:opacity-100 transition-all duration-200"
+              class="opacity-70 grayscale transition-all duration-200 hover:opacity-100 hover:grayscale-0"
               alt={name}
               src={icon}
             />

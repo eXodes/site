@@ -5,6 +5,12 @@ import {
   generateNamePrompt,
 } from "turbo-utils/prompt";
 
+interface PromptsData {
+  name: string;
+  directory: string;
+  export: boolean;
+}
+
 export const componentConfig: PlopTypes.PlopGeneratorConfig = {
   description: "Component is a reusable UI element.",
   async prompts(inquirer) {
@@ -22,12 +28,12 @@ export const componentConfig: PlopTypes.PlopGeneratorConfig = {
     {
       type: "add",
       path: "src/{{#if directory}}{{ directory }}/{{/if}}{{ dashCase name }}/{{ dashCase name }}.svelte",
-      templateFile: "component/templates/component.svelte.hbs",
+      templateFile: "component/templates/filename.svelte.hbs",
     },
     {
       type: "add",
       path: "src/{{#if directory}}{{ directory }}/{{/if}}{{ dashCase name }}/{{ dashCase name }}.spec.ts",
-      templateFile: "component/templates/component.spec.hbs",
+      templateFile: "component/templates/filename.spec.ts.hbs",
     },
     {
       type: "append",
@@ -35,7 +41,7 @@ export const componentConfig: PlopTypes.PlopGeneratorConfig = {
       pattern: /\/\* Components \*\/(?<insertion>)/g,
       template:
         'export { default as {{ pascalCase name }} } from "./{{#if directory}}{{ directory }}/{{/if}}{{dashCase name}}/{{dashCase name}}.svelte";',
-      skip(data: { export: boolean }) {
+      skip(data: PromptsData) {
         if (!data.export) return "Component not exported";
       },
     },

@@ -8,8 +8,8 @@ import ts from "typescript-eslint";
 
 export default ts.config(
   unicorn.configs["flat/recommended"],
-  ...ts.configs.recommendedTypeChecked,
-  ...ts.configs.stylisticTypeChecked,
+  ...ts.configs.recommended,
+  ...ts.configs.stylistic,
   prettier,
   ...turbo,
   {
@@ -25,7 +25,6 @@ export default ts.config(
 
       parser: ts.parser,
       parserOptions: {
-        projectService: true,
         tsconfigRootDir: import.meta.dirname,
       },
     },
