@@ -55,7 +55,7 @@ export const pageConfig: PlopTypes.PlopGeneratorConfig = {
     {
       type: "add",
       path: "tests/{{ route }}/page.spec.ts",
-      templateFile: "page/templates/filename.spec.hbs",
+      templateFile: "page/templates/filename.spec.ts.hbs",
     },
   ],
 };
