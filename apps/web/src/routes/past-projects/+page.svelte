@@ -14,7 +14,7 @@
     {
       title: "Bella Vista Waterfront",
       description:
-        "Bella Vista Waterfront is a themed resort situated in Langkawi, Malaysia. Spanning 14 acres of landscaped gardens overlooking the Andaman Sea, it offers a picturesque setting ideal for getaways",
+        "Bella Vista Waterfront is a themed resort situated in Langkawi, Malaysia. Spanning 14 acres of landscaped gardens overlooking the Andaman Sea, it offers a picturesque setting ideal for getaways.",
       company: "Cipta Asia Worldwide",
       image: base + "/images/projects/bella-vista.png",
       link: "http://www.bvhotelsandresorts.com",
@@ -76,7 +76,7 @@
     {
       title: "Fitness First",
       description:
-        "Fitness First Malaysia is a premium fitness center offering state-of-the-art equipment, diverse group classes, and certified personal trainers across 11 locations nationwide",
+        "Fitness First Malaysia is a premium fitness center offering state-of-the-art equipment, diverse group classes, and certified personal trainers across 11 locations nationwide.",
       company: "GrowthOps (formerly APD)",
       image: base + "/images/projects/fitness-first.png",
       link: "https://www.fitnessfirst.com",
@@ -85,7 +85,7 @@
     {
       title: "Magnum 4D",
       description:
-        "Magnum Corporation Sdn Bhd is a gaming company that operates the Magnum 4D brand, which offers a variety of gaming products including 4D, 4D Jackpot, 4D Jackpot Gold, Magnum Life, and Magnum 4D Powerball.",
+        "Magnum Corporation Sdn Bhd is a gaming company that operates the Magnum 4D brand, which offers a variety of gaming products.",
       company: "GrowthOps (formerly APD)",
       image: base + "/images/projects/magnum-4d.png",
       link: "https://magnum4d.my",
@@ -124,7 +124,7 @@
         "Melaka POS is a comprehensive point-of-sale (POS) application designed to streamline business operations for retailers and online sellers.",
       company: "Hypefast",
       image: base + "/images/projects/melaka-pos.png",
-      link: "https://dashboard.melaka.app",
+      link: "https://pos.melaka.app",
       year: 2024,
     },
     {
