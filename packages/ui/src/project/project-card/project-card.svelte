@@ -56,7 +56,7 @@
         <p
           class="rounded bg-gray-300 px-2 py-1 text-xs font-semibold uppercase tracking-wide text-gray-400"
         >
-          Not available
+          Link Unavailable
         </p>
       {/if}
     </div>
