@@ -1,5 +1,11 @@
 <script lang="ts">
   import { base } from "$app/paths";
+  import hello from "$lib/assets/hello.svg";
+  import bluesky from "$lib/assets/social/bluesky.svg";
+  import facebook from "$lib/assets/social/facebook.svg";
+  import instagram from "$lib/assets/social/instagram.svg";
+  import whatsapp from "$lib/assets/social/whatsapp.svg";
+  import x from "$lib/assets/social/x.svg";
   import { Link } from "ui";
 
   interface Social {
@@ -12,27 +18,27 @@
     {
       name: "Bluesky",
       href: "https://exodes.bsky.social",
-      icon: base + "/images/social/bluesky.svg",
+      icon: bluesky,
     },
     {
       name: "X",
       href: "https://x.com/eXodes",
-      icon: base + "/images/social/x.svg",
+      icon: x,
     },
     {
       name: "Facebook",
       href: "https://www.facebook.com/exod3s",
-      icon: base + "/images/social/facebook.svg",
+      icon: facebook,
     },
     {
       name: "Instagram",
       href: "https://www.instagram.com/exodes/",
-      icon: base + "/images/social/instagram.svg",
+      icon: instagram,
     },
     {
       name: "WhatsApp",
       href: "https://whatsapp.exodes.net",
-      icon: base + "/images/social/whatsapp.svg",
+      icon: whatsapp,
     },
   ];
 </script>
@@ -44,11 +50,12 @@
 <main
   class="container mx-auto flex min-h-screen flex-col justify-center gap-8 px-6 py-10 lg:gap-20"
 >
-  <h1 class="font-display text-8xl text-picton-blue-900">
+  <h1 class="font-display text-8xl">
+    <span class="sr-only">Hello</span>
     <img
-      src={base + "/images/hello.svg"}
+      src={hello}
       alt="Hello"
-      class="h-12 w-auto stroke-picton-blue-900 lg:h-24"
+      class="h-12 w-auto lg:h-24"
     />
   </h1>
 
@@ -93,7 +100,10 @@
     <ul class="flex gap-6">
       {#each SOCIAL as { name, href, icon }}
         <li class="h-5 w-5 lg:h-6 lg:w-6">
-          <a href={href}>
+          <a
+            href={href}
+            aria-label={name}
+          >
             <img
               class="opacity-70 grayscale transition-all duration-200 hover:opacity-100 hover:grayscale-0"
               alt={name}
