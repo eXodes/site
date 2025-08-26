@@ -79,9 +79,9 @@
       external>videography</Link
     >. I spend most of my time tinkering with Javascript frameworks while creating my own
     <Link
-      href="https://github.com/eXodes/gene-ui"
-      external>UI Library</Link
-    >, and some other projects. During my free time, I enjoy <Link
+      href="https://github.com/eXodes?tab=repositories"
+      external>some projects</Link
+    >. During my free time, I enjoy <Link
       href="https://trakt.tv/users/exodes/history/shows"
       external>TV series</Link
     > such as Fringe, Timeless, Battlestar Galactica and sometimes
