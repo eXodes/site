@@ -1,3 +1,4 @@
+import { enhancedImages } from "@sveltejs/enhanced-img";
 import { svelte } from "@sveltejs/vite-plugin-svelte";
 import { svelteTesting } from "@testing-library/svelte/vite";
 import path from "node:path";
@@ -18,7 +19,7 @@ export default defineConfig({
   },
   // eslint-disable-next-line @typescript-eslint/ban-ts-comment
   // @ts-ignore - this is a valid Vite config
-  plugins: [svelte(), svelteTesting()],
+  plugins: [enhancedImages(), svelte(), svelteTesting()],
   resolve: process.env.VITEST ? { conditions: ["browser"] } : undefined,
   test: {
     environment: "jsdom",
