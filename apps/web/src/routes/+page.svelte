@@ -70,11 +70,11 @@
     <Link
       href="https://www.youtube.com/playlist?list=PLRCk8ZrqaXj9JYeKG-hCbgnOp_2o2V5o2"
       external>videography</Link
-    >. I spend most of my time tinkering with Javascript frameworks while creating my own
+    >. I spend most of my time tinkering with Javascript frameworks while working on
     <Link
-      href="https://github.com/eXodes/gene-ui"
-      external>UI Library</Link
-    >, and some other projects. During my free time, I enjoy <Link
+      href="https://github.com/eXodes?tab=repositories"
+      external>some projects</Link
+    >. During my free time, I enjoy <Link
       href="https://trakt.tv/users/exodes/history/shows"
       external>TV series</Link
     > such as Fringe, Timeless, Battlestar Galactica and sometimes
