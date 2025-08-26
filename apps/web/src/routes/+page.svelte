@@ -70,7 +70,7 @@
     <Link
       href="https://www.youtube.com/playlist?list=PLRCk8ZrqaXj9JYeKG-hCbgnOp_2o2V5o2"
       external>videography</Link
-    >. I spend most of my time tinkering with Javascript frameworks while working on
+    >. I spend most of my time tinkering with JavaScript frameworks while working on
     <Link
       href="https://github.com/eXodes?tab=repositories"
       external>some projects</Link
